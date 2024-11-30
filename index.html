@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>NAGATO vous souhaite un Joyeux Noel</title>
+</head>
+<body>
+    
+<div class="container">
+    <div class="circle"></div>
+<!-- ici c'est la neige -->
+    <div class="snow">
+        <span style="--i:11"></span>
+        <span style="--i:12"></span>
+        <span style="--i:24"></span>
+        <span style="--i:10"></span>
+        <span style="--i:14"></span>
+        <span style="--i:23"></span>
+        <span style="--i:18"></span>
+        <span style="--i:16"></span>
+        <span style="--i:19"></span>
+        <span style="--i:20"></span>
+        <span style="--i:22"></span>
+        <span style="--i:25"></span>
+        <span style="--i:18"></span>
+        <span style="--i:21"></span>
+        <span style="--i:13"></span>
+        <span style="--i:15"></span>
+        <span style="--i:26"></span>
+        <span style="--i:17"></span>
+        <span style="--i:13"></span>
+        <span style="--i:28"></span>
+        <span style="--i:11"></span>
+        <span style="--i:12"></span>
+        <span style="--i:24"></span>
+        <span style="--i:10"></span>
+        <span style="--i:14"></span>
+        <span style="--i:23"></span>
+        <span style="--i:18"></span>
+        <span style="--i:16"></span>
+        <span style="--i:19"></span>
+        <span style="--i:20"></span>
+        <span style="--i:22"></span>
+        <span style="--i:25"></span>
+        <span style="--i:18"></span>
+        <span style="--i:21"></span>
+        <span style="--i:13"></span>
+        <span style="--i:15"></span>
+        <span style="--i:26"></span>
+        <span style="--i:17"></span>
+        <span style="--i:13"></span>
+        <span style="--i:28"></span>
+
+        
+        
+
+
+
+
+
+    </div><br><br><br><br><br><br>
+    <!-- ici c'est mon message-->
+    <div class="box">
+        <h4 style="color: white;">Joyeux Noël  <span class="element"></span></h4>
+      </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script type="text/javascript">
+      var options = {
+        strings: ['De la part de NAGATO', ", Joyeux Noël ! J'espère que tu passeras des moments merveilleux entouré(e) de ceux que tu aimes. Profite bien des bons repas et des rires ",],
+        typeSpeed: 80,
+        	backSpeed: 70,
+      		
+      		loop: true,
+      };
+      
+      var typed = new Typed('.element', options);
+      
+    </script>
+
+    <!-- ici c'est pour lancer la musique en arriere plan-->
+    <audio id="song">
+        <source src="son_noel.mp3">
+    </audio>
+
+    <script>
+        
+        window.addEventListener('click', () =>{
+            document.getElementById("song").play();
+        }); 
+        
+    </script>
+
+   
+
+</body>
+</html>
